@@ -1,47 +1,217 @@
 :root {
-    --primary-text-color: #2E2F42;
-    --secondary-text-color: #434455;
+    /* Colors */
+    --primary-brand: #4D5AE5;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --primary-white-color: #FFFFFF;
+    
+    /* Fonts */
+    --primary-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+
 }
+
 body {
-    font-family: "Roboto";
-    background-color: #FFF;
-    color: var(--primary-text-color)
+    background-color: var(--primary-white-color);
+    color: var(--dark);
+    font-family: var(--primary-font-family);
 }
 
-.site-nav .nav-link {
-    color: var(--primary-text-color)
+.logo-web {
+    color: var(--primary-brand);
+    font-family: var(--secondary-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.logo-studio {
+    color: var(--dark);
 }
 
-.site-nav .nav-link:hover,
-.nav-link:focus {
-    color: #434455;
+
+.list {
+    list-style: none;
 }
 
-.site-nav .nav-link:active {
-    color: #4D5AE5;
+.link {
+    text-decoration: none;
 }
 
-.feature {
-    color: #2E2F42;
-}
-.feature-text {
-    color: #434455;
-}
-
-/* Шапка сторінки */
-
-.header-contact-link {
-    color: var(--secondary-text-color);
+.title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 
-/* Button */
-.button {
-    background: #4D5AE5;
-    color: #FFF;
+/* [----- SITE NAV -----] */
+
+.site-nav .link {
+    color: inherit;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--primary-brand);
+}
+
+/* [----- CONTACTS -----] */
+
+.header-contact .link {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-contact .link:hover,
+.header-contact .link:focus {
+    color: var(--primary-brand);
+}
+
+/* [----- TITLE PAGE -----] */
+
+.title-color {
+    background-color: var(--dark);
+}
+
+.title-page {
+    color: var(--primary-white-color);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+/* [----- BUTTON TITLE -----]*/
+
+.title-btn {
+    color: var(--primary-white-color);
+    background-color: var(--primary-brand);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    border-radius: 4px;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+}
+
+.title-btn:hover,
+.title-btn:focus {
+    background-color: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 32px;
-    gap: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* [----- FEATURES -----] */
+
+.feature .subfeature {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.feature .desc {
+    color: var(--text);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+/* [----- TEAM -----] */
+.team {
+    background-color: var(--light);
+}
+
+.team .item {
+    background-color: var(--primary-white-color);
+}
+
+.team .subfeature,
+.team .desc {
+    font-size: 16px;
+    line-height: 1.5;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team .subfeature {
+    font-weight: 600;
+}
+
+.team .desc {
+    color: var(--dark);
+}
+
+/* [----- FOOTER -----] */
+footer {
+    background-color: var(--dark);
+}
+
+.footer-logo {
+    font-family: var(--secondary-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(21/18);
+    letter-spacing: 0.03em;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F4F4FD;
+}
+
+.footer-logo-studio {
+    color: var(--primary-brand);
+}
+
+.footer-text {
+    color: var(--accent);
+    
+}
+
+
+/* [====== PORTFOLIO PAGES ======] /
+
+/* BUTTON */
+
+.portfolio-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    border: none;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: var(--light);
+    background-color: var(--primary-brand);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    cursor: pointer;
 }
